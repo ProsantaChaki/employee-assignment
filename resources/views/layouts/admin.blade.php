@@ -21,6 +21,94 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+    <style>
+        table.tile th,
+        table.tile td {
+            text-align: center;
+        }
+
+        .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td, .table-striped thead tr.primary:nth-child(2n+1) th {
+            background-color: #20a8d8;
+            text-align: center;
+            color: white;
+        }
+
+        .dataTables_info {
+            width: 30%;
+            float: left;
+        }
+
+
+        .dataTables_paginate {
+            float: right;
+            text-align: right;
+        }
+
+
+        .paging_full_numbers {
+            width:70%;
+            /*   width: 400px;*/
+            height: 22px;
+            line-height: 22px;
+        }
+
+        .example_alt_pagination div.dataTables_info {
+            width: 30%;
+        }
+
+        .paging_full_numbers {
+            width:70%;
+            /*   width: 400px;*/
+            height: 22px;
+            line-height: 22px;
+        }
+
+        .paging_full_numbers a:active {
+            outline: none
+        }
+
+        .paging_full_numbers a:hover {
+            text-decoration: none;
+        }
+
+        .paging_full_numbers a.paginate_button,
+        .paging_full_numbers a.paginate_active {
+            border: 1px solid #aaa;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            padding: 2px 5px;
+            margin: 0 3px;
+            cursor: pointer;
+            *cursor: hand;
+        }
+
+        .paging_full_numbers a.paginate_button {
+            background-color: #ddd;
+        }
+
+        .paging_full_numbers a.paginate_button:hover {
+            background-color: #ccc;
+            text-decoration: none !important;
+        }
+
+        .paging_full_numbers a.paginate_active {
+            background-color: #99B3FF;
+        }
+
+
+        .pagination.pagination-split li {
+            display: inline-block;
+            margin-right: 3px;
+        }
+
+        .pagination.pagination-split li a {
+            border-radius: 4px;
+            color: #768399;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+
+    </style>
     @yield('styles')
 </head>
 

@@ -24,7 +24,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
                             </div>
-                            <input name="email" type="text" class="form-control @if($errors->has('email')) is-invalid @endif" placeholder="{{ trans('global.login_email') }}">
+                            <input name="email" type="text" class="form-control @if($errors->has('email')) is-invalid @endif" placeholder="{{ trans('global.login_email') }}" value="admin@admin.com">
                             @if($errors->has('email'))
                                 <em class="invalid-feedback">
                                     {{ $errors->first('email') }}
@@ -35,7 +35,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-lock"></i></span>
                             </div>
-                            <input name="password" type="password" class="form-control @if($errors->has('password')) is-invalid @endif" placeholder="{{ trans('global.login_password') }}">
+                            <input name="password" type="password" class="form-control @if($errors->has('password')) is-invalid @endif" placeholder="{{ trans('global.login_password') }}" value="password">
                             @if($errors->has('password'))
                                 <em class="invalid-feedback">
                                     {{ $errors->first('password') }}

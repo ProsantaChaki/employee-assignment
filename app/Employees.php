@@ -17,4 +17,10 @@ class Employees extends Model
         'joining_date',
         'termination_date',
     ];
+    public $timestamps = false;
+
+    public function designation()
+    {
+        return $this->hasOne('App\Designations','id','designation_id');
+    }
 }

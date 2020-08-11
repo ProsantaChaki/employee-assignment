@@ -23,4 +23,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     Route::resource('employee', 'EmployeesController');
 
+    Route::get('designation', 'ResourceController@designation');
+
+    Route::get('load_employee/{page}/{limit}', 'ResourceController@employeeLoad');
+
+    Route::post('update_employee', 'ResourceController@employeeUpdate');
+
+
 });

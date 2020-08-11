@@ -122,7 +122,7 @@ return [
             'deleted_at_helper'        => '',
         ],
     ],
-    'user'                                 => [
+    'employee'                                 => [
         'title'          => 'Employees',
         'title_singular' => 'Employee',
         'fields'         => [
@@ -327,7 +327,7 @@ return [
     'deselect_all'                         => 'Deselect all',
     'team-management'                      => 'Teams',
     'team-management-singular'             => 'Team',
-    'site_title'                           => 'Laravel + CoreUI',
+    'site_title'                           => 'Employee',
     'userManagement'                       => [
         'title'          => 'User Management',
         'title_singular' => 'User Management',

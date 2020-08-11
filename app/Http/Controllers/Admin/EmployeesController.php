@@ -13,11 +13,11 @@ class EmployeesController extends Controller
 {
     public function index()
     {
-        abort_unless(\Gate::allows('user_access'), 403);
+        abort_unless(\Gate::allows('employee_access'), 403);
 
-        $users = User::all();
+        //$users = User::all();
 
-        return view('admin.users.index', compact('users'));
+        return view('admin.employees.index');
     }
 
     public function create()
